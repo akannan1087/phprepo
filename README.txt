@@ -1,6 +1,6 @@
 
-Welcome to README file for dockersing a simple PHP App
-Please follow the below steps for lab exercises:
+##Welcome to README file for dockersing a simple PHP App
+###Please follow the below steps for lab exercises:
 
 sudo docker build . -t your_docker_user_id/myphpapp
 (note - change the above your_docker_user_id to userid you had created in cloud.docker.com)
@@ -11,7 +11,7 @@ enter your docker hub crendetials
 sudo docker push your_docker_user_id/myphpapp
 (note - change the above your_docker_user_id to userid you had created in cloud.docker.com)
 
-How to run application?
+#How to run application?
 
 sudo docker run -p 80:80 --rm --name myfirstApp1 your_docker_user_id/myphpapp
 now go to browser enter the public dns name with port no 8081.  
@@ -21,7 +21,7 @@ sudo docker run -p 8092:80 --rm --name myfirstApp2 your_docker_user_id/myphpapp
 Make sure you open port 8092 in security firewall rules.
 
 
-sample commands for reference:( you dont have to execute, please refer them)
+##sample commands for reference:( you dont have to execute, please refer them)
 
 sudo docker images 
    - this command will list all docker images you have on your machine.
