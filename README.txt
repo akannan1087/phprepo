@@ -13,8 +13,10 @@ sudo docker push your_docker_user_id/myphpapp
 
 #How to run application?
 
-sudo docker run -p 80:80 --rm --name myfirstApp1 your_docker_user_id/myphpapp
-now go to browser enter the public dns name with port no 8081.  
+sudo docker run -p 8082:80 --rm --name myfirstApp1 your_docker_user_id/myphpapp
+now go to browser enter the public dns name with port no 8082.  
+
+(Make sure you open port 8082 in security firewall rules for that EC2 instance)
 
 ### if you would like to run on differet port 
 sudo docker run -p 8092:80 --rm --name myfirstApp2 your_docker_user_id/myphpapp
