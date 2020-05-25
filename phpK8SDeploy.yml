@@ -12,7 +12,7 @@ spec:
         name: phpapp
     spec:
       containers:
-      - image: ananthkannan/myspringbootapp:latest
+      - image: 287301745136.dkr.ecr.us-east-2.amazonaws.com/myphpapp:latest
         name: phpapp
         ports: 
         - name: phpapp
