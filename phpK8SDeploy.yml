@@ -16,7 +16,7 @@ spec:
         name: phpapp
         ports: 
         - name: phpapp
-          containerPort: 80
+          containerPort: 8085
 ---
 # Node Port Service
 apiVersion: v1
