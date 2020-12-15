@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: php-deployment
+  name: my-php-deployment
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: php-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-php
-        image: akdevopscoaching/myphp
+        image: akdevopscoaching/phpapp
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
