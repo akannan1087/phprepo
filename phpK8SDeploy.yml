@@ -13,8 +13,8 @@ spec:
         app: php-app
     spec:
       containers:
-      - name: my-php-app
-        image: ananthkannan/myphp-app
+      - name: my-php
+        image: akdevopscoaching/myphp
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
